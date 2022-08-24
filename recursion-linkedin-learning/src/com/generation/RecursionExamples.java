@@ -15,9 +15,10 @@ public class RecursionExamples {
       System.out.println("");
       
       //use recursion to find the factorial of a number
-//      System.out.println("Enter a number for the factorial problem: ");
-//      int f = in.nextInt();
-//      System.out.println("Factorial of 5 is: "+factorial(f));
+      System.out.println("Enter a number for the factorial problem: ");
+      int f = in.nextInt();
+      System.out.println("Factorial of 5 is: "+factorial(f));
+      in.close();
       
       //call GCD
 //      System.out.println("Enter two numbers and I'll find the GCD");
@@ -38,7 +39,10 @@ public class RecursionExamples {
   
   private static int factorial(int b)
   {
-      return 0;
+	  if(b==1 || b==0) {
+		  return 1;
+	  }
+	  return b*factorial(b-1);
   }
   /*
   Greatest Common denominator recursive function
