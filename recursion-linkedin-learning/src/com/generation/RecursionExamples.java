@@ -18,13 +18,13 @@ public class RecursionExamples {
       System.out.println("Enter a number for the factorial problem: ");
       int f = in.nextInt();
       System.out.println("Factorial of 5 is: "+factorial(f));
-      in.close();
       
       //call GCD
-//      System.out.println("Enter two numbers and I'll find the GCD");
-//      int x = in.nextInt();
-//      int y = in.nextInt();
-//      System.out.println(Greatest(x,y));
+      System.out.println("Enter two numbers and I'll find the GCD");
+      int x = in.nextInt();
+      int y = in.nextInt();
+      System.out.println(Greatest(x,y));
+      in.close();
       
   }
   private static void reversePrint(int[] numbers)
@@ -50,6 +50,18 @@ public class RecursionExamples {
   */
   private static int Greatest(int a, int b)
   {
-     return 0;
+	  if(a==0)
+		  return b;
+	  if(b==0)
+		  return a;
+	  if(a<b) {
+		 int temp=a;
+		 a=b;
+		 b=temp;
+	  }
+	  int res=a%b;
+	  if(res==0)
+		   return b;
+	  return Greatest(b,res);
   }
 }
