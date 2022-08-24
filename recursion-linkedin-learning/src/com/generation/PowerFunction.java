@@ -10,6 +10,7 @@ public class PowerFunction {
 		double number = in.nextDouble();
 		int exp = in.nextInt();
 		System.out.println(power(number,exp));
+		in.close();
 	}
 	private static double power(double x,int n) {
 	
