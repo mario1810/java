@@ -1,5 +1,6 @@
 package com.generation;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class RecursionExamples {
@@ -27,8 +28,14 @@ public class RecursionExamples {
   }
   private static void reversePrint(int[] numbers)
   {
-      
+	  if(numbers.length==0) {
+		  return;
+	  }
+	  System.out.print(numbers[numbers.length-1]+" ");
+	  reversePrint(Arrays.copyOfRange(numbers, 0, numbers.length-1));
   }
+  
+  
   private static int factorial(int b)
   {
       return 0;
