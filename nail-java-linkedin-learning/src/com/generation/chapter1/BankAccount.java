@@ -1,7 +1,7 @@
 package com.generation.chapter1;
 
 public class BankAccount {
-    private String owner;
+    protected String owner;
     private double balance;
 
     public double getBalance() {
