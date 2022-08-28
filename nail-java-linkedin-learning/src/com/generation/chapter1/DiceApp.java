@@ -1,6 +1,6 @@
 package com.generation.chapter1;
 
-public class Main {
+public class DiceApp {
     public static void main(String[] args) {
         System.out.println(Dice.sidesOfDice);
 
