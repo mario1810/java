@@ -61,7 +61,7 @@ public class PalindromeApp {
 	private static boolean palindromeCheckerMario(String s1) {
 		if(s1.trim().length()==0)
 			return false;
-		String s2=s1.trim().replace("[\\. ]+","").toUpperCase();
+		String s2=s1.trim().replaceAll("[\\. ]+","").toUpperCase();
 		int init=0;
 		int end=s2.length()-1;
 		while(init<=end) {
