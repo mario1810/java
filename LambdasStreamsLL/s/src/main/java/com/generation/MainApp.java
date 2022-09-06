@@ -13,7 +13,6 @@ public class MainApp {
 		
 		//instead of creating a class to implement the interface
 		Greeting greeting2= new Greeting() {
-			@Override
 			public void sayHello() {
 				System.out.println("Hello world 2");
 				
