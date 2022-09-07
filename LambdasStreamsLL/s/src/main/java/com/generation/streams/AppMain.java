@@ -26,7 +26,10 @@ public class AppMain {
 		
 		Stream<String> lettersStream= Stream.of("a","b","c");
 		
-		shoppingListStream.sorted().forEach(item->System.out.println(item));
+		shoppingListStream.sorted()
+							.map(item->item.toUpperCase())
+							.filter(item->item.startsWith("P"))
+							.forEach(item->System.out.println(item));
 
 	}
 
