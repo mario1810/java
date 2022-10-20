@@ -6,7 +6,6 @@ public class DoublyLinkedListDemo {
 	public static void main(String[] args) {
 	
 		DoublyLinkedList myList = new DoublyLinkedList();
-		
 		myList.insertAtHead(5);
 		myList.insertAtHead(10);
 		myList.insertAtHead(2);
@@ -15,12 +14,5 @@ public class DoublyLinkedListDemo {
 		myList.insertAtHead(20);
 		System.out.println(myList);
 	}
-	
-	
-	public static void insertionSort(DoublyLinkedList list) {
-		
-	}
-	
-	
 	
 }
